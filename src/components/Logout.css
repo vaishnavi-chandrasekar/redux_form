@@ -1,29 +1,116 @@
-.Name{
-    color: #e50914;
+.Name {
+  color: #e50914;
 }
-.Logout{
-    font-family: Roboto;
-    margin-top: 15%;
+.Logout > button {
+  /* background-color: black; */
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.5%;
+  font-family: Roboto;
 }
-.Logout>button{
-    width: 15%;
-    font-size: 1.6rem;
-    padding: 0.5%;
-    background-color: black;
+h1 {
+  font-family: Roboto;
 }
-.Logout>h1{
-    font-size: 2.3rem;
+.Logout {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  font-family: Roboto;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+.header {
+  font-size: 1rem;
+  margin: 3%;
+  font-family: Roboto;
+}
+@media (max-width: 768px) {
+  .Logout {
+    margin-top: 50%;
+  }
+  .Logout {
+    width: auto;
+    font-size: 1rem;
+  }
+  .header {
+    font-size: 1rem;
+  }
+}
+Table,
+Tr,
+Th,
+Td {
+  border: 2px solid black;
+}
+Table {
+  padding: 3%;
+}
+.cancelbtn {
+  color: white;
+  font-size: 1rem;
+  background-color: red;
+}
+.cancel {
+  color: white;
+  font-size: 1rem;
+  background-color: red;
+  margin-top: 1%;
+}
+.modalstyle {
+  margin-top: 12%;
+  font-size: 1rem;
+  margin-left: 37%;
+  width: 20%;
+  background-color: rgb(199, 175, 212);
+  padding: 3%;
+  border-radius: 20px ;
+  align-items: left;
+}
+.cancel_btn {
+  color: white;
+  font-size: 1rem;
+  background-color: red;
+}
+.Expensecancel {
+  color: white;
+  font-size: 1rem;
+  background-color: red;
+  margin-top: 1%;
+}
+.modal_style {
+  margin-top: 12%;
+  font-size: 1rem;
+  margin-left: 37%;
+  width: 20%;
+  background-color: rgb(199, 175, 212);
+  padding: 3%;
+  border-radius: 20px ;
+  align-items: left;
+}
+.Incomebtn {
+  background-color: green;
+}
+.Expensebtn {
+  background-color: #e50914;
+}
+.Logoutbtn {
+  background-color: black;
+}
+.Backbtn {
+  background-color: black;
 }
 @media(max-width:768px){
-.Logout{
- margin-top: 50%;
-
-    }
-.Logout>button{
- width: auto;
- font-size: 1rem;
-    }
-    .Logout>h1{
-        font-size: 1rem;
-    }
+  .modalstyle{
+    width: auto;
+    margin: 0;
+    padding: 3%;
+    margin-top: 20%;
+  }
+  .modal_style{
+    width: auto;
+    margin: 0;
+    padding: 3%;
+    margin-top: 20%;
+  }
 }

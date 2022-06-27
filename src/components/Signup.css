@@ -22,7 +22,7 @@ input {
   padding: 0.5%;
   border: 2px solid black;
 }
-button {
+.Signup_form>button {
   font-size: 1.3rem;
   margin: 3%;
   padding: 2%;
@@ -39,7 +39,7 @@ textarea {
 textarea {
   width: auto;
 }
-button {
+.Signup_form>button {
   font-size: 1.3rem;
   width: 90%;
   background-color: #e50914;

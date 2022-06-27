@@ -1,0 +1,29 @@
+.Modal>form>input,textarea{
+   width: 70%;
+   font-size: 1rem;
+   margin-top: 4%;
+}
+.Modal{
+    font-size: 1rem;
+    align-items: left;
+}
+select{
+    font-size: 1rem;
+    width:73%;
+    border:2px solid black;
+    margin-top: 4%;
+}
+.Modal>form>button{
+    font-size: 1rem;
+    margin-top: 18%;
+
+}
+@media(max-width:768px){
+    .Modal{
+        width: auto;
+    }
+    
+}
+ToastContainer{
+    background-color: aqua;
+}
