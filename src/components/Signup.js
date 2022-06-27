@@ -8,8 +8,8 @@ import { login } from "../features/userSlice";
 function Signup() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword ] = useState("");
- 
+  const [password, setPassword] = useState("");
+
   // const fetchData = async (Data)=>{
   //     try {
   //       await fetch("http://localhost:5000/userpost" , {
@@ -18,7 +18,7 @@ function Signup() {
   //         headers:{
   //           "content-type":"application/json"
   //         }
-          
+
   //       })
   //       setName(Data)
   //       alert("data saved")
@@ -49,23 +49,26 @@ function Signup() {
             placeholder="Username"
             value={name}
             onChange={(e) => setName(e.target.value)}
-           required></input>
+            required
+          ></input>
           <br />
           <input
             type="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-          required></input>
+            required
+          ></input>
           <br />
           <input
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-          required></input>
+            required
+          ></input>
           <br />
-         <button type="submit">Signup</button>
+          <button type="submit">Signup</button>
         </form>
       </div>
     </>
