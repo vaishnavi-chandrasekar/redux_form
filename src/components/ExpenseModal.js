@@ -29,7 +29,7 @@ function ModalContent() {
     },
     onSubmit: async (values) => {
       try {
-        await fetch("https://reduxback.herokuapp.com/userpost", {
+        await fetch("http:localhost:5000/userpost", {
           method: "POST",
           body: JSON.stringify(values),
           headers: {
@@ -52,7 +52,7 @@ function ModalContent() {
             name="types"
             onChange={formik.handleChange}
             value={formik.values.value}
-            required
+            required 
           >
             <option Value="DEFAULT" disabled>
               Category

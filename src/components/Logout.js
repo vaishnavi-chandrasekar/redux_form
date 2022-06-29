@@ -21,6 +21,7 @@ function Logout() {
   const [modalOpen, setModalOpen] = useState(false);
   const [Amount, setAmount] = useState([]);
   const [data, setData] = useState([0]);
+  const [reduxAmount,setReduxAmount] =useState([])
 
   const setModalIsOpenToTrue = () => {
     setModalIsOpen(true);
@@ -48,7 +49,7 @@ function Logout() {
   const Income = (e) => {
     e.preventDefault();
     dispatch(addIncome());
-    setAmount(addIncome);
+    setReduxAmount(addIncome);
   };
   // const Expense = (e) => {
   //   e.preventDefault();
@@ -57,7 +58,7 @@ function Logout() {
   useEffect(() => {
     async function fetchData() {
       try {
-        let items = await fetch("https://reduxback.herokuapp.com/userall");
+        let items = await fetch("http://localhost:5000/userall");
         let userdata = await items.json();
         setAmount(userdata);
         setData(userdata);

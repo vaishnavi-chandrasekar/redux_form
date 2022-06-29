@@ -15,11 +15,11 @@ export const userSlice = createSlice({
             // localStorage.removeItem('user')
     
         },
-        addIncome:(state=[],action)=>{
+        addIncome:(state,action)=>{
             state.user= action.payload
             
         },
-        addExpense:(state=[],action)=>{
+        addExpense:(state,action)=>{
             state.user=action.payload
         }
        
